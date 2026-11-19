@@ -1,0 +1,30 @@
+{
+  "seeds": [26813, 27961, 29147],
+  "modes": ["B0-L2", "B0-L3"],
+  "comparisons": [["B0-L2", "B0-L3"]],
+  "mode_profiles": {
+    "B0-L2": {"scheduler_mode": "B0", "max_loras": 2},
+    "B0-L3": {"scheduler_mode": "B0", "max_loras": 3}
+  },
+  "admission": {"wait_ms": 500, "ttl_ms": 10000, "cooldown_ms": 1000},
+  "arrival_duration_s": 16,
+  "measurement_duration_s": 48,
+  "request_timeout_s": 40,
+  "verify_response_identity": true,
+  "alternate_scenario_order": true,
+  "shared_suffix_from_index": 4,
+  "slo": {"ttft_s": 2, "tpot_s": 0.12},
+  "targets": {"cold_p95_reduction_pct": 20, "max_hot_p95_increase_ms": 1000, "max_goodput_loss_pct": 5},
+  "scenarios": {
+    "hot-first": {
+      "rps": 4, "tokens": 64, "cold": ["C", "D"], "adapter_phase": 0,
+      "adapter_prefix": ["A", "B", "C", "D"],
+      "adapters": ["A", "B", "C", "D", "A", "B", "A", "B"]
+    },
+    "cold-first": {
+      "rps": 4, "tokens": 64, "cold": ["C", "D"], "adapter_phase": 0,
+      "adapter_prefix": ["C", "D", "A", "B"],
+      "adapters": ["A", "B", "C", "D", "A", "B", "A", "B"]
+    }
+  }
+}

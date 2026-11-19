@@ -1,0 +1,8 @@
+{
+  "hot_pairs": 7,
+  "hot_interval_s": 0.10,
+  "cold_arrivals_s": {"C": 0.15, "D": 0.35},
+  "hot_max_tokens": 96,
+  "cold_max_tokens": 32,
+  "prompt": "Continue the sequence: one, two, three,"
+}

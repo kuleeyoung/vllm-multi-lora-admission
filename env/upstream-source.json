@@ -1,0 +1,31 @@
+{
+  "candidate_tag": "v0.33.0",
+  "commit": "4ba787ec9959e566d3b587a796dff07673324da5",
+  "source_url": "https://raw.githubusercontent.com/vllm-project/vllm/4ba787ec9959e566d3b587a796dff07673324da5/vllm/v1/core/sched/scheduler.py",
+  "scheduler_sha256": "d76cc22257550972137df9c893505d0bd0f5d482374691e6eca4372772de501a",
+  "locations": [
+    {
+      "line": 1047,
+      "text": "assert len(scheduled_loras) <= self.lora_config.max_loras"
+    },
+    {
+      "line": 1091,
+      "text": "# Check that adding the request still respects the max_loras constraint."
+    },
+    {
+      "line": 1096,
+      "text": "len(scheduled_loras) == self.lora_config.max_loras"
+    },
+    {
+      "line": 1100,
+      "text": "# Scheduling would exceed max_loras, skip."
+    },
+    {
+      "line": 1549,
+      "text": "self.running.append(request)"
+    }
+  ],
+  "runtime_verified": false,
+  "wheel": null,
+  "model_revision": null
+}

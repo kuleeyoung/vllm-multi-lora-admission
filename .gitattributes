@@ -1,0 +1,2 @@
+*.sh text eol=lf
+env/requirements-wsl.txt text eol=lf

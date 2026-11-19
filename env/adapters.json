@@ -1,0 +1,34 @@
+{
+  "rank": 8,
+  "alpha": 8,
+  "module": "o_proj",
+  "layers": [
+    24,
+    25,
+    26,
+    27
+  ],
+  "stddev": 0.12,
+  "adapters": {
+    "A": {
+      "seed": 4101,
+      "weights_sha256": "d912cd628428e9be44dcd7e0f5c3e39532b7aec48d0d926f60eb543282bf8c55",
+      "config_sha256": "36fdfcb8141bc81acc8c850ae1925cb445416ddfc051998958d53e3b8d2e3b91"
+    },
+    "B": {
+      "seed": 4102,
+      "weights_sha256": "af17ffc2a5c815785fd67e723c15988b34808c7155109c9b0b1d8686ad3f57e8",
+      "config_sha256": "36fdfcb8141bc81acc8c850ae1925cb445416ddfc051998958d53e3b8d2e3b91"
+    },
+    "C": {
+      "seed": 4103,
+      "weights_sha256": "df10f5a89f9f22cd7d3d997b16c1e65e95832705157d50a657235bb5e2a12c86",
+      "config_sha256": "36fdfcb8141bc81acc8c850ae1925cb445416ddfc051998958d53e3b8d2e3b91"
+    },
+    "D": {
+      "seed": 4104,
+      "weights_sha256": "80899f5ef0fa9f5fb0abaca16254a7fd62518509b41b68ec3801bfab9ceaefc6",
+      "config_sha256": "36fdfcb8141bc81acc8c850ae1925cb445416ddfc051998958d53e3b8d2e3b91"
+    }
+  }
+}

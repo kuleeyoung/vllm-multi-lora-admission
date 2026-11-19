@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+vendor/
+models/
+adapters/
+results/*
+!results/README.md
+env/host-probe*.json
+env/install-vllm.log
+env/wsl-probe.json

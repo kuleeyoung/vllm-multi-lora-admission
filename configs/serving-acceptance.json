@@ -1,0 +1,29 @@
+{
+  "seed": 18919,
+  "recommended_cycles": 3,
+  "arrival_duration_s": 4,
+  "measurement_duration_s": 24,
+  "request_timeout_s": 24,
+  "verify_response_identity": true,
+  "slo": {"ttft_s": 2, "tpot_s": 0.12},
+  "scenarios": {
+    "two-bursts": {
+      "cold": ["C", "D"],
+      "bursts": {
+        "starts_s": [0.0, 9.5],
+        "hot_pairs": 7,
+        "hot_pair_interval_s": 0.036,
+        "cold_offsets_s": {"C": 0.236, "D": 0.327},
+        "hot_output_options": [64],
+        "cold_output_tokens": 32,
+        "jitter_s": 0.006
+      }
+    },
+    "steady": {
+      "rps": 3.5,
+      "adapters": ["A", "B", "A", "B", "C", "A", "B", "D"],
+      "cold": ["C", "D"],
+      "tokens": 64
+    }
+  }
+}

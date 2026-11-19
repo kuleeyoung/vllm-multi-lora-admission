@@ -1,0 +1,15 @@
+{
+  "seeds": [713, 907, 1217],
+  "admission": {"wait_ms": 500, "ttl_ms": 10000, "cooldown_ms": 1000},
+  "arrival_duration_s": 6,
+  "measurement_duration_s": 18,
+  "request_timeout_s": 24,
+  "slo": {"ttft_s": 2, "tpot_s": 0.12},
+  "targets": {"cold_p95_reduction_pct": 20, "max_goodput_loss_pct": 5},
+  "scenarios": {
+    "uniform-low-short": {"rps": 2, "adapters": ["A", "B", "C", "D"], "cold": ["C", "D"], "tokens": 24},
+    "hot-near-short": {"rps": 3, "adapters": ["A", "B", "A", "B", "C", "A", "B", "D"], "cold": ["C", "D"], "tokens": 24},
+    "hot-near-long": {"rps": 3, "adapters": ["A", "B", "A", "B", "C", "A", "B", "D"], "cold": ["C", "D"], "tokens": 64},
+    "hot-overload-long": {"rps": 4.5, "adapters": ["A", "B", "A", "B", "C", "A", "B", "D"], "cold": ["C", "D"], "tokens": 64}
+  }
+}
